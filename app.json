@@ -2,9 +2,8 @@
   "name": "ChannelAutoCaption",
   "description": "Telegram auto channel caption bot.",
   "repository": "https://github.com/matrixbotz0/autocaption-try"
-  ],
   "buildpacks": [{
-    "url": "heroku/python"
+  "url": "heroku/python"
   }],
   "formation": {
     "worker": {
@@ -13,3 +12,4 @@
     }
   }
 }
+
