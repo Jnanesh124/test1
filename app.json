@@ -1,15 +1,30 @@
 {
-  "name": "ChannelAutoCaption",
-  "description": "Telegram auto channel caption bot.",
-  "repository": "https://github.com/matrixbotz0/autocaption-try"
-  "buildpacks": [{
-  "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "eco"
+    "name": "AutoCaption-Bot",
+    "description": "Auto Caption BoT test",
+    "logo": "https://telegra.ph/file/21c5410944db0e22b0158.jpg",
+    "keywords": [
+        "Private",
+        "Auto",
+        "Caption",
+        "Bot"
+    ],
+    "repository": "https://github.com/matrixbotz0/autocation-try",
+    "env": {
+        "bot_token": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""       
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
     }
-  }
 }
 
