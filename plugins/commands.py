@@ -1,8 +1,4 @@
 import logging
-logging.basicConfig(level=logging.DEBUG,
-                    format='(asctime) - (name) - (levelname) - (message)')
-logger = logging.getLogger(__name__)
-
 import pyrogram
 from pyrogram import filters
 from bot import autocaption
@@ -10,8 +6,11 @@ from config import Config
 from database.database import *
 from translation import Translation
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
- 
 
+logging.basicConfig(level=logging.DEBUG,
+                    format='(asctime) - (name) - (levelname) - (message)')
+logger = logging.getLogger(__name__)
+ 
 start_button=InlineKeyboardMarkup(
         [
               [
