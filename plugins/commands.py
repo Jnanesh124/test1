@@ -1,4 +1,3 @@
-import logging
 import pyrogram
 from pyrogram import filters
 from bot import autocaption
@@ -7,9 +6,6 @@ from database.database import *
 from translation import Translation
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
-logging.basicConfig(level=logging.DEBUG,
-logger = logging.getLogger(__name__)
- 
 start_button=InlineKeyboardMarkup(
         [
               [
