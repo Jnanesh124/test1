@@ -1,0 +1,16 @@
+{
+  "name": "ChannelAutoCaption",
+  "description": "Telegram auto channel caption bot.",
+  "repository": "https://github.com/MLZ-BOTZ/auto-caption"
+      }
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
