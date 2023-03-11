@@ -8,7 +8,7 @@ from translation import Translation
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 logging.basicConfig(level=logging.DEBUG,
-                    format='(asctime) - (name) - (levelname) - (message)')
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
  
 start_button=InlineKeyboardMarkup(
